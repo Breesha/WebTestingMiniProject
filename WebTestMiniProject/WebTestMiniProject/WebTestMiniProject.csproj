@@ -102,9 +102,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppConfigReader.cs" />
+    <Compile Include="BDD\Cart_BDDSteps.cs" />
     <Compile Include="lib\pages\SD_Cart.cs" />
     <Compile Include="lib\pages\SD_CheckoutPage1.cs" />
     <Compile Include="lib\pages\SD_CheckoutPage2.cs" />
+    <Compile Include="lib\pages\SD_LoginPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="lib\pages\SD_HomePage.cs" />
     <Compile Include="lib\SD_Website.cs" />
@@ -115,7 +117,6 @@
     <None Include="BDD\Cart_BDD.feature" />
     <None Include="BDD\Checkout1_BDD.feature" />
     <None Include="BDD\Checkout2_BDD.feature" />
-    <None Include="BDD\HomePage_BDD.feature" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

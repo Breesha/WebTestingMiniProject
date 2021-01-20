@@ -9,6 +9,7 @@ namespace WebTestProject
         public SD_Cart SD_Cart { get; internal set; }
         public SD_CheckoutPage1 SD_CheckoutPage1 { get; internal set; }
         public SD_CheckoutPage2 SD_CheckoutPage2 { get; internal set; }
+        public SD_LoginPage SD_LoginPage { get; internal set; }
 
 
         public SD_Website(string driverName, int pageLoadWaitInSecs = 10, int implicitWaitInSecs = 10)
@@ -18,6 +19,10 @@ namespace WebTestProject
 
             //Instantiate page objects with the selenium driver
             SD_HomePage = new SD_HomePage(SeleniumDriver);
+            SD_LoginPage = new SD_LoginPage(SeleniumDriver);
+            SD_Cart = new SD_Cart(SeleniumDriver);
+            SD_CheckoutPage1 = new SD_CheckoutPage1(SeleniumDriver);
+            SD_CheckoutPage2 = new SD_CheckoutPage2(SeleniumDriver);
         }
 
         public void DeleteCookies()
