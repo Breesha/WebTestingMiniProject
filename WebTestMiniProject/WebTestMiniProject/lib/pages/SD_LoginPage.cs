@@ -43,9 +43,11 @@ namespace WebTestProject
             return _errorMessage.Text;
         }
 
+
         public string GetPageURL()
         {
             return _seleniumDriver.Url;
         }
+
     }
 }
