@@ -6,6 +6,10 @@ namespace WebTestProject
     {
         public IWebDriver SeleniumDriver { get; internal set; }
         public SD_HomePage SD_HomePage { get; internal set; }
+        public SD_Cart SD_Cart { get; internal set; }
+        public SD_CheckoutPage1 SD_CheckoutPage1 { get; internal set; }
+        public SD_CheckoutPage2 SD_CheckoutPage2 { get; internal set; }
+
 
         public SD_Website(string driverName, int pageLoadWaitInSecs = 10, int implicitWaitInSecs = 10)
         {
