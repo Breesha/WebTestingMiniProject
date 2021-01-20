@@ -6,8 +6,10 @@ namespace WebTestProject
     {
         public IWebDriver SeleniumDriver { get; internal set; }
         public SD_HomePage SD_HomePage { get; internal set; }
+        public SD_Cart SD_Cart { get; internal set; }
+        public SD_CheckoutPage1 SD_CheckoutPage1 { get; internal set; }
+        public SD_CheckoutPage2 SD_CheckoutPage2 { get; internal set; }
         public SD_SingleItemDescriptionPage SD_SingleItemDescriptionPage { get; internal set; }
-        public SD_LoginPage SD_LoginPage { get; internal set; }
 
         public SD_YourInfoPage SD_YourInfoPage { get; internal set; }
 
@@ -21,6 +23,9 @@ namespace WebTestProject
 
             //Instantiate page objects with the selenium driver
             SD_HomePage = new SD_HomePage(SeleniumDriver);
+            SD_Cart = new SD_Cart(SeleniumDriver);
+            SD_CheckoutPage1 = new SD_CheckoutPage1(SeleniumDriver);
+            SD_CheckoutPage2 = new SD_CheckoutPage2(SeleniumDriver);
 
             SD_SingleItemDescriptionPage = new SD_SingleItemDescriptionPage(SeleniumDriver);
             
@@ -30,7 +35,6 @@ namespace WebTestProject
             SD_YourInfoPage = new SD_YourInfoPage(SeleniumDriver);
 
             SD_LoginPage = new SD_LoginPage(SeleniumDriver);
-
 
         }
 

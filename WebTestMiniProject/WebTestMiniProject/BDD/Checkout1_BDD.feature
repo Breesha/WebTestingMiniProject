@@ -1,4 +1,4 @@
-﻿Feature: HomePage_BDD
+﻿Feature: Checkout1_BDD
 	Simple calculator for adding two numbers
 
 @mytag
