@@ -5,7 +5,7 @@
 Scenario: VisitingAnInventoryItemsDetails
 	Given I am Logged in as a Standard 
 	When I click on the inventory item with the <id>
-	Then I can see that items details
+	Then I can see that items <id> details
 	Examples: 
 	| id                |
 	| item_0_title_link |

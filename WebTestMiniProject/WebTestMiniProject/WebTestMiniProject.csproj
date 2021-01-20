@@ -91,6 +91,7 @@
   <ItemGroup>
     <Compile Include="AppConfigReader.cs" />
     <Compile Include="BDD\SingleInventoryItemDetailsSteps.cs" />
+    <Compile Include="lib\pages\SD_LoginPage.cs" />
     <Compile Include="lib\pages\SD_SingleItemDescriptionPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="lib\pages\SD_HomePage.cs" />

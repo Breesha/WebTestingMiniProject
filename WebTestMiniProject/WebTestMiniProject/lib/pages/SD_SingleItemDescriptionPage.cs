@@ -43,7 +43,13 @@ namespace WebTestProject
         }
         public void VisitSingleItemDetailsPage(string id)
         {
-            _inventoryItems.Where(item => item.GetAttribute("id") == id).FirstOrDefault().Click();
+
+            var inventoryItem =_inventoryItems.Where(item => item.FindElement(By.ClassName("inventory_item_label"))
+            .FindElement(By.TagName("a"))
+            .GetAttribute("id") == id)
+            .FirstOrDefault();
+
+            inventoryItem.FindElement(By.ClassName("inventory_item_label")).FindElement(By.TagName("a")).Click();
         }
         public void GoToProductsList()
         {
