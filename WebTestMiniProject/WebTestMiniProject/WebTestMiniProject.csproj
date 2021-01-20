@@ -107,6 +107,7 @@
     <Compile Include="lib\pages\SD_HomePage.cs" />
     <Compile Include="lib\SD_Website.cs" />
     <Compile Include="lib\driver_config\SeleniumDriverConfig.cs" />
+    <Compile Include="YourInfoTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
