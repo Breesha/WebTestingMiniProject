@@ -65,6 +65,19 @@ namespace WebTestProject
             Assert.That(SD_Website.GetURL(), Does.Contain(pageURL));
         }
 
+        [When(@"I press the remove button")]
+        public void WhenIPressTheRemoveButton()
+        {
+            SD_Website.SD_Cart.ClickRemoveItem();
+        }
+
+        [Then(@"The item should be removed")]
+        public void ThenTheItemShouldBeRemoved()
+        {
+            Assert.That(SD_Website.SD_Cart.CheckThereIsAnItemInTheCart(), Is.Null);
+        }
+
+
         [AfterScenario]
         public void DisposeWebDriver()
         {

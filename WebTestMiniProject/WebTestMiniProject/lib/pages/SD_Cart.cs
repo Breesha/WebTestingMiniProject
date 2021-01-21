@@ -10,6 +10,7 @@ namespace WebTestProject
         private IWebElement _btnContinueShopping => _seleniumDriver.FindElement(By.LinkText("CONTINUE SHOPPING"));
         private IWebElement _btnCheckout => _seleniumDriver.FindElement(By.LinkText("CHECKOUT"));
         private IWebElement _cartItem => _seleniumDriver.FindElement(By.ClassName("cart_item"));
+        private IWebElement _btnRemoveItem => _seleniumDriver.FindElement(By.ClassName("btn_secondary"));
 
         public SD_Cart(IWebDriver seleniumDriver)
         {
@@ -42,6 +43,11 @@ namespace WebTestProject
             {
                 return null;
             }
+        }
+
+        public void ClickRemoveItem()
+        {
+            _btnRemoveItem.Click();
         }
     }
 

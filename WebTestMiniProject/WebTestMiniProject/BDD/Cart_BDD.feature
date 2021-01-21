@@ -22,4 +22,11 @@ Scenario: CheckoutWithItems
 	And I have items in my cart
 	When I press the checkout button
 	Then I should land on the "checkout-step-one" page
+
+@Cart
+Scenario: RemoveItemFromCart
+	Given I am on the cart page with items
+	And I have items in my cart
+	When I press the remove button
+	Then The item should be removed
 	
