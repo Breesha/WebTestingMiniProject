@@ -66,19 +66,13 @@ User Story 5: Item description
 
 ### Review
 
-Complete work
-
-Good work load
-
-Good prep from yesterday
+For the first sprint, the aim was to complete all of the coding for the project. We achieved this as a group, mainly due to the preparation that we did yesterday. The prep meant that we could quickly get started and knew that there were no conflicting or repeated areas of work within the project and also meant we could evenly split up the work so we each have a manageable work load for the day. Tests were achieved for each user story - all of which passed.
 
 ### Retrospective
 
-Kept in mind 2 members had interviews today
+The main barrier for this sprint was that two members of the team needed time for interview prep. With this added into the plan during the prep stage of this project, there was no conflict.
 
-Good communication with problems, always on a call/ available
-
-Team effort to merge all our work together
+As a group we always had a call going which we would all be part of. This meant that we could discuss if we had any problems and help resolve them together. It was also really useful when it came to merging our work as there was always someone available to review and approve the request. The share screen function let us review merge conflicts as a group and alter the files together.
 
 # Sprint 2
 
