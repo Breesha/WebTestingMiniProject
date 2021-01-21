@@ -11,6 +11,10 @@ The functionality we are focusing on includes:
 * Finalising orders
 * Product information
 
+## Class Diagram
+
+![image](https://github.com/Dragonkid1996/WebTestingMiniProject/blob/dev/Project%20Images/ClassDiagram.png)
+
 ## Preparation
 
 Instead of starting with a sprint, we took the first day to organise in our group how we could split the work evenly and cover the content for this project to be a success.
