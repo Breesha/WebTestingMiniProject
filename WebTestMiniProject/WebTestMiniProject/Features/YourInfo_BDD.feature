@@ -12,7 +12,7 @@ Scenario: No Fields Entered
 	Then the error message will say "Error: First Name is required"
 
 @yourinfopage
-Scenario: Not All Fields Entered
+Scenario Outline: Not All Fields Entered
 	Given I am on the Your Information page
 	And the <first name>, <last name> and <postal code> are entered
 	When the continue button is clicked
@@ -34,7 +34,7 @@ Scenario: Cancel the login
 	Then the page url will be "https://www.saucedemo.com/cart.html"
 
 @yourinfopage
-Scenario: Valid login
+Scenario Outline: Valid login
 	Given I am on the Your Information page
 	And the <first name>, <last name> and <postal code> are entered
 	When the continue button is clicked

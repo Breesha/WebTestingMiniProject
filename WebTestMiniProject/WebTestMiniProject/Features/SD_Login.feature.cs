@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace WebTestMiniProject.BDD
+namespace WebTestMiniProject.Features
 {
     using TechTalk.SpecFlow;
     using System;
@@ -35,7 +35,7 @@ namespace WebTestMiniProject.BDD
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD", "SD_Login", "\tIn order to be able to use the website \r\n\tAs a user of the sauce demo website\r\n\t" +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "SD_Login", "\tIn order to be able to use the website \r\n\tAs a user of the sauce demo website\r\n\t" +
                     "I want to be able to log in", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
