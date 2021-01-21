@@ -100,7 +100,26 @@ For the final sprint, the aim is to complete all documentation and to prepare fo
 
 # The Framework
 
-
+<li class="scenario">
+            <div class="scenario-heading" id="no-fields-entered">
+              <p class="tags">Tags: <span>@yourinfopage</span></p>
+              <h2>No Fields Entered</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">Given </span>I am on the Your Information page</li>
+                <li class="step">
+                  <span class="keyword">And </span>the fields are empty</li>
+                <li class="step">
+                  <span class="keyword">When </span>the continue button is clicked</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the error message will say "Error: First Name is required"</li>
+              </ul>
+            </div>            <a class="scenario-link" href="javascript:showImageLink('no-fields-entered')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+ </li>
 
 # Testing
 
