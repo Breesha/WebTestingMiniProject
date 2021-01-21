@@ -103,3 +103,50 @@ For the final sprint, the aim is to complete all documentation and to prepare fo
 # Testing
 
 ![image](https://github.com/Dragonkid1996/WebTestingMiniProject/blob/dev/Project%20Images/TestExplorer.png)
+
+# Pickle Documentation
+
+﻿ <title>Features</title> <link rel="stylesheet" href="css/master.css" type="text/css"> <link rel="stylesheet" href="css/print.css" type="text/css" media="print">   <script type="text/javascript"> $(document).ready(function() { initializeToc(); }); </script> 
+
+<div id="container">
+
+<div id="top">
+
+<div id="toc">
+
+«
+
+*   <span class="current">Home</span>
+*   [Cart_BDD](Cart_BDD.html)
+*   [HomePage_BDD](HomePage_BDD.html)
+*   [SD_Login](SD_Login.html)
+*   [SingleInventoryItemDetails](SingleInventoryItemDetails.html)
+*   [YourInfo_BDD](YourInfo_BDD.html)
+
+</div>
+
+<div id="feature">
+
+# Features
+
+*   [<span class="title">Cart_BDD</span> <span class="separator">-</span> <span class="description">In order to be able to complete the order As a registered user of the saucedemo website I want to navigate the cart page</span>](Cart_BDD.html)
+*   [<span class="title">HomePage_BDD</span> <span class="separator">-</span> <span class="description">In order to be able to buy items As a registered user of the saucedemo website I want to be able to update my cart</span>](HomePage_BDD.html)
+*   [<span class="title">SD_Login</span> <span class="separator">-</span> <span class="description">In order to be able to use the website As a user of the sauce demo website I want to be able to log in</span>](SD_Login.html)
+*   [<span class="title">SingleInventoryItemDetails</span> <span class="separator">-</span> <span class="description">Single Item Description As standard logged in user I want to click to a specific item so that i can view its details</span>](SingleInventoryItemDetails.html)
+*   [<span class="title">YourInfo_BDD</span> <span class="separator">-</span> <span class="description">In order to be able to navigate to the checkout overview As a standard user of the sauce demo website I want to be able to add my information So I can advance to the checkout overview</span>](YourInfo_BDD.html)
+
+</div>
+
+<div id="footer">
+
+Test results generated for: WebTestMiniProject, version 1.0
+
+Generated on: 21 January 2021 12:57:56
+
+Produced by Pickles, version 2.21.0.0
+
+</div>
+
+</div>
+
+</div>
