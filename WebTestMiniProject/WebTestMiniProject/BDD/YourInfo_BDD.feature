@@ -16,7 +16,7 @@ Scenario: Not All Fields Entered
 	Given I am on the Your Information page
 	And the <first name>, <last name> and <postal code> are entered
 	When the continue button is clicked
-	Then there will be an <error message>
+	Then the following error message will say <error message>
 	Examples:
 	| first name | last name | postal code | error message                  |
 	| Breesha    |           |             | Error: Last Name is required   |
