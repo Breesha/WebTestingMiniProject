@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using System;
 
 namespace WebTestProject
 {
@@ -12,6 +13,9 @@ namespace WebTestProject
         private IWebElement _passwordField => _seleniumDriver.FindElement(By.Id("password"));
         private IWebElement _loginButton => _seleniumDriver.FindElement(By.Id("login-button"));
         private IWebElement _errorMessage => _seleniumDriver.FindElement(By.CssSelector("*[data-test=\"error\"]"));
+
+        private IWebElement _backpackLabel => _seleniumDriver.FindElement(By.Id("item_4_title_link"));
+
 
         public SD_LoginPage(IWebDriver seleniumDriver)
         {
@@ -46,6 +50,22 @@ namespace WebTestProject
         public string GetPageURL()
         {
             return _seleniumDriver.Url;
+        }
+
+        public long PageLoadTime()
+        {
+            var time1 = DateTime.Now.Ticks / TimeSpan.TicksPerSecond;
+            _loginButton.Click();
+            _seleniumDriver.FindElement(By.Id("item_4_img_link"));
+            var time2 = DateTime.Now.Ticks / TimeSpan.TicksPerSecond;
+            var pageloadtime = time2 - time1;
+            return pageloadtime;
+
+        }
+
+        public void ClickBackPackLabel()
+        {
+            _backpackLabel.Click();
         }
     }
 }

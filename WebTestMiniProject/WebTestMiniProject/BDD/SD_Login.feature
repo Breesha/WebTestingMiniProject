@@ -26,3 +26,27 @@ Scenario: Standard User
 	And I enter a password "secret_sauce"
 	And I click the login button
 	Then I should land on the products page where the url is "https://www.saucedemo.com/inventory.html"
+
+	@mytag
+Scenario: Locked Out User
+	Given I am on the login page
+	When I enter an username "locked_out_user"
+	And I enter a password "secret_sauce"
+	And I click the login button
+	Then I should see an error message containing "Epic sadface: Sorry, this user has been locked out"
+
+	@mytag
+Scenario: Performance Glitch User
+	Given I am on the login page
+	When I enter an username "performance_glitch_user"
+	And I enter a password "secret_sauce"
+	Then I click on the login button and should land on the products page after 3 seconds
+
+	@mytag
+Scenario: Problem User
+	Given I am on the login page
+	When I enter an username "problem_user"
+	And I enter a password "secret_sauce"
+	And I click the login button
+	And I click the backpack label link
+	Then I should land on the item page where the url is "https://www.saucedemo.com/inventory-item.html?id=5"

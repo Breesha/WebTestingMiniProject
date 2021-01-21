@@ -33,6 +33,12 @@ namespace WebTestProject
             SD_Website.SD_LoginPage.ClickLoginButton();
         }
 
+        [When(@"I click the backpack label link")]
+        public void WhenIClickTheBackpackLabelLink()
+        {
+            SD_Website.SD_LoginPage.ClickBackPackLabel();
+        }
+
         [Then(@"I should see an error message containing ""(.*)""")]
         public void ThenIShouldSeeAnErrorMessageContaining(string expected)
         {
@@ -44,6 +50,19 @@ namespace WebTestProject
         {
             Assert.That(SD_Website.SD_LoginPage.GetPageURL(), Is.EqualTo(expected));
         }
+
+        [Then(@"I click on the login button and should land on the products page after (.*) seconds")]
+        public void ThenIClickOnTheLoginButtonAndShouldLandOnTheProductsPageAfterSeconds(int expected)
+        {
+            Assert.That(SD_Website.SD_LoginPage.PageLoadTime(), Is.GreaterThan(expected));
+        }
+
+        [Then(@"I should land on the item page where the url is ""(.*)""")]
+        public void ThenIShouldLandOnTheItemPageWhereTheUrlIs(string expected)
+        {
+            Assert.That(SD_Website.SD_LoginPage.GetPageURL(), Is.EqualTo(expected));
+        }
+
 
 
         [AfterScenario]
