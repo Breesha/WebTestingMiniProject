@@ -53,6 +53,13 @@ User Story 3: Check in to cart and authentication
 - [ ] Scenario 3.3 - Cancel the login
 - [ ] Scenario 3.4 - Valid login
 
+User Story 4: Checkout
+
+- [ ] Scenario 4.1 - Continue Shopping Button
+- [ ] Scenario 4.2 - Checkout with no Items
+- [ ] Scenario 4.3 - Checkout with Items
+- [ ] Scenario 4.4 - Remove Item from Cart
+
 User Story 5: Item description
 
 - [ ] Scenario 5.1 - Single Item Description Page
@@ -97,7 +104,4 @@ For the final sprint, the aim is to complete all documentation and to prepare fo
 
 # Testing
 
-
-
-
-
+![image](https://github.com/Dragonkid1996/WebTestingMiniProject/blob/dev/Project%20Images/TestExplorer.png)
