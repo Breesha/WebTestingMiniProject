@@ -106,8 +106,6 @@
     <Compile Include="BDD\Cart_BDDSteps.cs" />
     <Compile Include="BDD\HomePage_BDDSteps.cs" />
     <Compile Include="lib\pages\SD_Cart.cs" />
-    <Compile Include="lib\pages\SD_CheckoutPage1.cs" />
-    <Compile Include="lib\pages\SD_CheckoutPage2.cs" />
     <Compile Include="BDD\SingleInventoryItemDetailsSteps.cs" />
     <Compile Include="lib\pages\SD_SingleItemDescriptionPage.cs" />
     <Compile Include="BDD\YourInfo_BDDSteps.cs" />
@@ -123,12 +121,11 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="BDD\Cart_BDD.feature" />
-    <None Include="BDD\Checkout1_BDD.feature" />
-    <None Include="BDD\Checkout2_BDD.feature" />
     <None Include="BDD\HomePage_BDD.feature" />
     <None Include="BDD\SingleInventoryItemDetails.feature" />
     <None Include="BDD\YourInfo_BDD.feature" />
     <None Include="BDD\SD_Login.feature" />
+    <None Include="ClassDiagram.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
