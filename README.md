@@ -33,40 +33,40 @@ The aim of this sprint is to complete the coding for the project. This includes 
 
 User Story 1: Sign in and authentication
 
-- [ ] Scenario 1.1 - Invalid user
-- [ ] Scenario 1.2 - Invalid password
-- [ ] Scenario 1.3 - Standard user
-- [ ] Scenario 1.4 - Locked out user
-- [ ] Scenario 1.5 - Problem user
-- [ ] Scenario 1.6 - Performance glitch user
+- [x] Scenario 1.1 - Invalid user
+- [x] Scenario 1.2 - Invalid password
+- [x] Scenario 1.3 - Standard user
+- [x] Scenario 1.4 - Locked out user
+- [x] Scenario 1.5 - Problem user
+- [x] Scenario 1.6 - Performance glitch user
 
 User Story 2: Updating cart
 
-- [ ] Scenario 2.1 - Add Item to Cart
-- [ ] Scenario 2.2 - Cart Increased by 1 when Item Added to Cart
-- [ ] Scenario 2.3 - Button Name Change
+- [x] Scenario 2.1 - Add Item to Cart
+- [x] Scenario 2.2 - Cart Increased by 1 when Item Added to Cart
+- [x] Scenario 2.3 - Button Name Change
 
 User Story 3: Check in to cart and authentication
 
-- [ ] Scenario 3.1 - No fields entered
-- [ ] Scenario 3.2 - Not all fields entered
-- [ ] Scenario 3.3 - Cancel the login
-- [ ] Scenario 3.4 - Valid login
+- [x] Scenario 3.1 - No fields entered
+- [x] Scenario 3.2 - Not all fields entered
+- [x] Scenario 3.3 - Cancel the login
+- [x] Scenario 3.4 - Valid login
 
 User Story 4: Checkout
 
-- [ ] Scenario 4.1 - Continue Shopping Button
-- [ ] Scenario 4.2 - Checkout with no Items
-- [ ] Scenario 4.3 - Checkout with Items
-- [ ] Scenario 4.4 - Remove Item from Cart
+- [x] Scenario 4.1 - Continue Shopping Button
+- [x] Scenario 4.2 - Checkout with no Items
+- [x] Scenario 4.3 - Checkout with Items
+- [x] Scenario 4.4 - Remove Item from Cart
 
 User Story 5: Item description
 
-- [ ] Scenario 5.1 - Single Item Description Page
-- [ ] Scenario 5.2 - Back Button
-- [ ] Scenario 5.3 - Add to cart
-- [ ] Scenario 5.4 - Add to cart: Button Title
-- [ ] Scenario 5.5 - Remove From Cart
+- [x] Scenario 5.1 - Single Item Description Page
+- [x] Scenario 5.2 - Back Button
+- [x] Scenario 5.3 - Add to cart
+- [x] Scenario 5.4 - Add to cart: Button Title
+- [x] Scenario 5.5 - Remove From Cart
 
 ### Review
 
