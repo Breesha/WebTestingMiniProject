@@ -11,6 +11,7 @@ namespace WebTestProject
         //IWebElements
         private IWebElement _cartLink => _seleniumDriver.FindElement(By.Id("shopping_cart_container"));
         private IWebElement _btnAddToCart => _seleniumDriver.FindElement(By.XPath("//*[@id=\"inventory_container\"]/div/div[1]/div[3]/button"));
+        private IWebElement _noItems => _seleniumDriver.FindElement(By.ClassName("fa-layers-counter"));
 
         public SD_HomePage(IWebDriver seleniumDriver)
         {
@@ -30,6 +31,16 @@ namespace WebTestProject
         public void AddItemToCart()
         {
             _btnAddToCart.Click();
+        }
+
+        public string GetButtonText()
+        {
+            return _btnAddToCart.Text;
+        }
+
+        public int GetNumberOfItemsInCart()
+        {
+            return Int32.Parse(_noItems.Text);
         }
     }
 }
