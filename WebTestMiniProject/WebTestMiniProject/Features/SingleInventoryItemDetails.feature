@@ -5,7 +5,7 @@
 	so that i can view its details
 
 @mytag
-Scenario: VisitingAnInventoryItemsDetails
+Scenario Outline: VisitingAnInventoryItemsDetails
 	Given I am Logged in as a Standard 
 	When I click on the inventory item with the <id>
 	Then I can see that items <id> details
@@ -19,7 +19,7 @@ Scenario: VisitingAnInventoryItemsDetails
 	| item_5_title_link |
 
 	@mytag
-Scenario: GoingFromTheSingleItemDescriptionPageBackToProductList
+Scenario Outline: GoingFromTheSingleItemDescriptionPageBackToProductList
 Given I am Logged in as a Standard 
 And I am on an item's <id> description page
 When I click the "Back" button
@@ -34,7 +34,7 @@ Then I am redirected to the products page
 	| item_5_title_link |
 
 	@mytag
-Scenario: PressingTheCartButtonFromTheSingleItemDescriptionPage
+Scenario Outline: PressingTheCartButtonFromTheSingleItemDescriptionPage
 Given I am Logged in as a Standard 
 And I am on an item's <id> description page
 When I click the Add to Cart button
@@ -44,7 +44,7 @@ Examples:
 | item_0_title_link |
 
 @mytag
-Scenario: CartButtonTextChanges
+Scenario Outline: CartButtonTextChanges
 Given I am Logged in as a Standard
 And I am on an item's <id> description page
 When I click the Add to Cart button
@@ -54,7 +54,7 @@ Examples:
 | item_0_title_link |
 
 @mytag
-Scenario: RemoveFromCart
+Scenario Outline: RemoveFromCart
 Given I am Logged in as a Standard
 And I am on an item's <id> description page
 And I add an item in my cart

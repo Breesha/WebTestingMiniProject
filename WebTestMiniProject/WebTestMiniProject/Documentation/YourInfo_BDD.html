@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"[]>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>YourInfo_BDD</title>
+    <link rel="stylesheet" href="css/master.css" type="text/css" />
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <script type="text/javascript">
+$(document).ready(function() {
+  initializeToc();
+});
+</script>
+    <!-- We are using Font Awesome - http://fortawesome.github.com/Font-Awesome - licensed under CC BY 3.0 -->
+  </head>
+  <body>
+    <div id="container">
+      <div id="top" />
+      <div id="toc">
+        <p class="tocCollapser" title="Collapse Table of Content">«</p>
+        <ul class="features">
+          <li class="file" id="root">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="file">
+            <a href="Cart_BDD.html">Cart_BDD</a>
+          </li>
+          <li class="file">
+            <a href="HomePage_BDD.html">HomePage_BDD</a>
+          </li>
+          <li class="file">
+            <a href="SD_Login.html">SD_Login</a>
+          </li>
+          <li class="file">
+            <a href="SingleInventoryItemDetails.html">SingleInventoryItemDetails</a>
+          </li>
+          <li class="file">
+            <span class="current">YourInfo_BDD</span>
+          </li>
+        </ul>
+      </div>
+      <div id="feature">
+        <h1>YourInfo_BDD</h1>
+        <div class="description">
+          <p>In order to be able to navigate to the checkout overview
+As a standard user of the sauce demo website
+I want to be able to add my information
+So I can advance to the checkout overview</p>
+        </div>
+        <ul id="scenarios">
+          <li class="scenario">
+            <div class="scenario-heading" id="no-fields-entered">
+              <p class="tags">Tags: <span>@yourinfopage</span></p>
+              <h2>No Fields Entered</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">Given </span>I am on the Your Information page</li>
+                <li class="step">
+                  <span class="keyword">And </span>the fields are empty</li>
+                <li class="step">
+                  <span class="keyword">When </span>the continue button is clicked</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the error message will say "Error: First Name is required"</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('no-fields-entered')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+          </li>
+          <li class="scenario">
+            <div class="scenario-heading" id="not-all-fields-entered">
+              <p class="tags">Tags: <span>@yourinfopage</span></p>
+              <h2>Not All Fields Entered</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">Given </span>I am on the Your Information page</li>
+                <li class="step">
+                  <span class="keyword">And </span>the &lt;first name&gt;, &lt;last name&gt; and &lt;postal code&gt; are entered</li>
+                <li class="step">
+                  <span class="keyword">When </span>the continue button is clicked</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the following error message will say &lt;error message&gt;</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('not-all-fields-entered')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+            <div>
+              <div class="examples">
+                <h3>Examples: </h3>
+                <div class="table_container">
+                  <table class="datatable">
+                    <thead>
+                      <tr>
+                        <th>first name</th>
+                        <th>last name</th>
+                        <th>postal code</th>
+                        <th>error message</th>
+                        <th> </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Breesha</td>
+                        <td></td>
+                        <td></td>
+                        <td>Error: Last Name is required</td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>Foxton</td>
+                        <td></td>
+                        <td>Error: First Name is required</td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td>IM2</td>
+                        <td>Error: First Name is required</td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td>Breesha</td>
+                        <td>Foxton</td>
+                        <td></td>
+                        <td>Error: Postal Code is required</td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>Foxton</td>
+                        <td>IM2</td>
+                        <td>Error: First Name is required</td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td>Breesha</td>
+                        <td></td>
+                        <td>IM2</td>
+                        <td>Error: Last Name is required</td>
+                        <td />
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="scenario">
+            <div class="scenario-heading" id="cancel-the-login">
+              <p class="tags">Tags: <span>@yourinfopage</span></p>
+              <h2>Cancel the login</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">Given </span>I am on the Your Information page</li>
+                <li class="step">
+                  <span class="keyword">And </span>the fields are empty</li>
+                <li class="step">
+                  <span class="keyword">When </span>the cancel button is clicked</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the page url will be "https://www.saucedemo.com/cart.html"</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('cancel-the-login')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+          </li>
+          <li class="scenario">
+            <div class="scenario-heading" id="valid-login">
+              <p class="tags">Tags: <span>@yourinfopage</span></p>
+              <h2>Valid login</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">Given </span>I am on the Your Information page</li>
+                <li class="step">
+                  <span class="keyword">And </span>the &lt;first name&gt;, &lt;last name&gt; and &lt;postal code&gt; are entered</li>
+                <li class="step">
+                  <span class="keyword">When </span>the continue button is clicked</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the page url will be "https://www.saucedemo.com/checkout-step-two.html"</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('valid-login')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+            <div>
+              <div class="examples">
+                <h3>Examples: </h3>
+                <div class="table_container">
+                  <table class="datatable">
+                    <thead>
+                      <tr>
+                        <th>first name</th>
+                        <th>last name</th>
+                        <th>postal code</th>
+                        <th> </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Breesha</td>
+                        <td>Foxton</td>
+                        <td>IM2</td>
+                        <td />
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="footer">
+        <p>Test results generated for: WebTestMiniProject, version 1.0</p>
+        <p>Generated on: 21 January 2021 12:57:56</p>
+        <p>Produced by Pickles, version 2.21.0.0</p>
+      </div>
+    </div>
+  </body>
+</html>
