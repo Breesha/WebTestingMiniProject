@@ -86,6 +86,11 @@ For the final sprint, the aim is to complete all documentation and to prepare fo
 - [ ] Update project board
 - [ ] Presentation preparation
 
+### Review
+As this was a short sprint, we completed all the tasks within time and completed all criteria for each task.
+
+### Retrospective
+We worked well together on creating a presentation and organised who would be covering each section. The use of screen sharing meant the formatting of the project didn't become too complex.
 
 
 # The Framework
