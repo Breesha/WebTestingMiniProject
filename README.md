@@ -92,6 +92,18 @@ As this was a short sprint, we completed all the tasks within time and completed
 ### Retrospective
 We worked well together on creating a presentation and organised who would be covering each section. The use of screen sharing meant the formatting of the project didn't become too complex.
 
+## Project Review
+- Good preparation created a strong base to work from
+- Good split in work load 
+- User stories clear
+- README updated continuously 
+
+## Project Retrospective
+- Good communication 
+- Factored in interview prep 
+- Support as always calling
+
+
 
 # The Framework
 
