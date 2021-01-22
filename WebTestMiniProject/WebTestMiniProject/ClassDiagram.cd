@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WebTestProject.SD_Website">
+    <Position X="2.5" Y="0.75" Width="1.75" />
+    <AssociationLine Name="SD_Cart" Type="WebTestProject.SD_Cart" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.812" Y="2.69" />
+        <Point X="2.812" Y="11.971" />
+        <Point X="11.75" Y="11.971" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="SD_LoginPage" Type="WebTestProject.SD_LoginPage" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.812" Y="2.69" />
+        <Point X="3.812" Y="5.503" />
+        <Point X="4.25" Y="5.503" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="SD_SingleItemDescriptionPage" Type="WebTestProject.SD_SingleItemDescriptionPage" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.312" Y="2.69" />
+        <Point X="3.312" Y="9.365" />
+        <Point X="8" Y="9.365" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="SD_YourInfoPage" Type="WebTestProject.SD_YourInfoPage" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.062" Y="2.69" />
+        <Point X="3.062" Y="10.788" />
+        <Point X="10" Y="10.788" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAIAAAAAAACAAAAAAAAAAAgAgAAgACAAAAAI=</HashCode>
+      <FileName>lib\SD_Website.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SD_Cart" />
+      <Property Name="SD_HomePage" />
+      <Property Name="SD_LoginPage" />
+      <Property Name="SD_SingleItemDescriptionPage" />
+      <Property Name="SD_YourInfoPage" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WebTestProject.SD_Cart">
+    <Position X="11.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEgAAAAAAAEgAAAAiAAACCAAAAEAQgAAAAAAAAAAAA=</HashCode>
+      <FileName>lib\pages\SD_Cart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebTestProject.SD_HomePage">
+    <Position X="6.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAABAQAAAAACEAAAAQgAAEAAAEAAAAAEAAAAA=</HashCode>
+      <FileName>lib\pages\SD_HomePage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebTestProject.SD_LoginPage">
+    <Position X="4.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQFQAAAAAAAAgAAAAAAAAAkAAAGAAAoAAAAAABAAAA=</HashCode>
+      <FileName>lib\pages\SD_LoginPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebTestProject.SD_SingleItemDescriptionPage">
+    <Position X="8" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAEAAAABAQBABBIQAAAAAAAAEkQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>lib\pages\SD_SingleItemDescriptionPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebTestProject.SD_YourInfoPage">
+    <Position X="10" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAIAAAABAAAACAAAAAAQAIAGIAAAAAAAAAEAAQY=</HashCode>
+      <FileName>lib\pages\SD_YourInfoPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebTestProject.AppConfigReader">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAgACAAAAAAAAA=</HashCode>
+      <FileName>AppConfigReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebTestProject.Cart_BDDSteps">
+    <Position X="13.5" Y="8.75" Width="1.5" />
+    <AssociationLine Name="SD_Website" Type="WebTestProject.SD_Website" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.25" Y="8.75" />
+        <Point X="14.25" Y="2.5" />
+        <Point X="4.25" Y="2.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAACAAAQAAAQQCAAAIAAAAAgAgAAAIAAQ=</HashCode>
+      <FileName>BDD\Cart_BDDSteps.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SD_Website" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WebTestMiniProject.BDD.HomePage_BDDSteps">
+    <Position X="18.75" Y="5.25" Width="1.5" />
+    <AssociationLine Name="SD_Website" Type="WebTestProject.SD_Website" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.5" Y="5.25" />
+        <Point X="19.5" Y="1.312" />
+        <Point X="4.25" Y="1.312" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>BCAAAAAEAAAAAAAAAAAAAQAAAAAAAAgAAAAgAAIgAAA=</HashCode>
+      <FileName>BDD\HomePage_BDDSteps.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SD_Website" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WebTestProject.SD_LoginSteps">
+    <Position X="20.5" Y="3.25" Width="1.5" />
+    <AssociationLine Name="SD_Website" Type="WebTestProject.SD_Website" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="21.25" Y="3.25" />
+        <Point X="21.25" Y="0.938" />
+        <Point X="4.25" Y="0.938" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAIAgAAAIAAQAAAAAAQAAEAAAACEAAEBA=</HashCode>
+      <FileName>BDD\SD_LoginSteps.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SD_Website" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WebTestMiniProject.SingleInventoryItemDetailsSteps">
+    <Position X="17" Y="6" Width="1.5" />
+    <AssociationLine Name="SD_Website" Type="WebTestProject.SD_Website" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.75" Y="6" />
+        <Point X="17.75" Y="1.75" />
+        <Point X="4.25" Y="1.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACRAAAEABAAAIAAAApAQAAAAAAAgAAAAAgQEgAAAA=</HashCode>
+      <FileName>BDD\SingleInventoryItemDetailsSteps.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="SD_Website" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WebTestProject.YourInfo_BDDSteps">
+    <Position X="15.25" Y="6.5" Width="1.5" />
+    <AssociationLine Name="SD_Website" Type="WebTestProject.SD_Website" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.594" Y="6.5" />
+        <Point X="15.594" Y="2.188" />
+        <Point X="4.25" Y="2.188" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAFAQBAAgAAAAAAAAAAAAQAAAQAAAAAAAAAgAgAAAgA=</HashCode>
+      <FileName>BDD\YourInfo_BDDSteps.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SD_Website" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
