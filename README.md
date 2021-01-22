@@ -102,3 +102,391 @@ For the final sprint, the aim is to complete all documentation and to prepare fo
 
 ![image](https://github.com/Dragonkid1996/WebTestingMiniProject/blob/main/Project%20Images/TestExplorer.png)
 
+# Features Documentation
+
+# Contents
+
+# Cart\_BDD
+
+In order to be able to complete the order
+
+As a registered user of the saucedemo website
+
+I want to navigate the cart page
+
+## ContinueShoppingFromCart
+
+_(Tags: @Cart)_
+
+**Given** I am on the cart page
+
+**When** I press the continue shopping button
+
+**Then** I should land on the &quot;inventory&quot; page
+
+## CheckoutNoItems
+
+_(Tags: @Cart)_
+
+**Given** I am on the cart page
+
+**And** I have no items in my cart
+
+**When** I press the checkout button
+
+**Then** I should land on the &quot;checkout-step-one&quot; page
+
+## CheckoutWithItems
+
+_(Tags: @Cart)_
+
+**Given** I am on the cart page with items
+
+**And** I have items in my cart
+
+**When** I press the checkout button
+
+**Then** I should land on the &quot;checkout-step-one&quot; page
+
+## RemoveItemFromCart
+
+_(Tags: @Cart)_
+
+**Given** I am on the cart page with items
+
+**And** I have items in my cart
+
+**When** I press the remove button
+
+**Then** The item should be removed
+
+# HomePage\_BDD
+
+In order to be able to buy items
+
+As a registered user of the saucedemo website
+
+I want to be able to update my cart
+
+## AddItemToCartNumberItemsIncreases
+
+_(Tags: @Inventory)_
+
+**Given** I am on the home page
+
+**And** I have no items in my cart
+
+**When** I add an item to my cart
+
+**Then** I should have 1 item in the cart
+
+## AddItemToCartIsInCart
+
+_(Tags: @Inventory)_
+
+**Given** I am on the home page
+
+**And** I have no items in my cart
+
+**When** I add an item to my cart
+
+**And** I go to the cart page
+
+**Then** There should be an item in the cart
+
+## AddItemToCartButtonChanges
+
+_(Tags: @Inventory)_
+
+**Given** I am on the home page
+
+**When** I add an item to my cart
+
+**Then** The button text should have changed to &quot;REMOVE&quot;
+
+# SD\_Login
+
+In order to be able to use the website
+
+As a user of the sauce demo website
+
+I want to be able to log in
+
+## Invalid Username
+
+_(Tags: @mytag)_
+
+**Given** I am on the login page
+
+**When** I enter an username &quot;lauren&quot;
+
+**And** I enter a password &quot;secret\_sauce&quot;
+
+**And** I click the login button
+
+**Then** I should see an error message containing &quot;Epic sadface: Username and password do not match any user in this service&quot;
+
+## Invalid Password
+
+_(Tags: @mytag)_
+
+**Given** I am on the login page
+
+**When** I enter an username &quot;standard\_user&quot;
+
+**And** I enter a password &quot;1234&quot;
+
+**And** I click the login button
+
+**Then** I should see an error message containing &quot;Epic sadface: Username and password do not match any user in this service&quot;
+
+## Standard User
+
+_(Tags: @mytag)_
+
+**Given** I am on the login page
+
+**When** I enter an username &quot;standard\_user&quot;
+
+**And** I enter a password &quot;secret\_sauce&quot;
+
+**And** I click the login button
+
+**Then** I should land on the products page where the url is &quot;https://www.saucedemo.com/inventory.html&quot;
+
+## Locked Out User
+
+_(Tags: @mytag)_
+
+**Given** I am on the login page
+
+**When** I enter an username &quot;locked\_out\_user&quot;
+
+**And** I enter a password &quot;secret\_sauce&quot;
+
+**And** I click the login button
+
+**Then** I should see an error message containing &quot;Epic sadface: Sorry, this user has been locked out&quot;
+
+## Performance Glitch User
+
+_(Tags: @mytag)_
+
+**Given** I am on the login page
+
+**When** I enter an username &quot;performance\_glitch\_user&quot;
+
+**And** I enter a password &quot;secret\_sauce&quot;
+
+**Then** I click on the login button and should land on the products page after 3 seconds
+
+## Problem User
+
+_(Tags: @mytag)_
+
+**Given** I am on the login page
+
+**When** I enter an username &quot;problem\_user&quot;
+
+**And** I enter a password &quot;secret\_sauce&quot;
+
+**And** I click the login button
+
+**And** I click the backpack label link
+
+**Then** I should land on the item page where the url is &quot;https://www.saucedemo.com/inventory-item.html?id=5&quot;
+
+# SingleInventoryItemDetails
+
+Single Item Description
+
+As standard logged in user
+
+I want to click to a specific item
+
+so that i can view its details
+
+## VisitingAnInventoryItemsDetails
+
+_(Tags: @mytag)_
+
+**Given** I am Logged in as a Standard
+
+**When** I click on the inventory item with the \&lt;id\&gt;
+
+**Then** I can see that items \&lt;id\&gt; details
+
+### Examples:
+
+| id |
+| --- |
+| item\_0\_title\_link |
+| item\_1\_title\_link |
+| item\_2\_title\_link |
+| item\_3\_title\_link |
+| item\_4\_title\_link |
+| item\_5\_title\_link |
+
+## GoingFromTheSingleItemDescriptionPageBackToProductList
+
+_(Tags: @mytag)_
+
+**Given** I am Logged in as a Standard
+
+**And** I am on an item&#39;s \&lt;id\&gt; description page
+
+**When** I click the &quot;Back&quot; button
+
+**Then** I am redirected to the products page
+
+### Examples:
+
+| id |
+| --- |
+| item\_0\_title\_link |
+| item\_1\_title\_link |
+| item\_2\_title\_link |
+| item\_3\_title\_link |
+| item\_4\_title\_link |
+| item\_5\_title\_link |
+
+## PressingTheCartButtonFromTheSingleItemDescriptionPage
+
+_(Tags: @mytag)_
+
+**Given** I am Logged in as a Standard
+
+**And** I am on an item&#39;s \&lt;id\&gt; description page
+
+**When** I click the Add to Cart button
+
+**Then** the item amount in my cart increases by 1
+
+### Examples:
+
+| id |
+| --- |
+| item\_0\_title\_link |
+
+## CartButtonTextChanges
+
+_(Tags: @mytag)_
+
+**Given** I am Logged in as a Standard
+
+**And** I am on an item&#39;s \&lt;id\&gt; description page
+
+**When** I click the Add to Cart button
+
+**Then** Then the &quot;Add to cart&quot; buttons name is &quot;REMOVE&quot;
+
+### Examples:
+
+| id |
+| --- |
+| item\_0\_title\_link |
+
+## RemoveFromCart
+
+_(Tags: @mytag)_
+
+**Given** I am Logged in as a Standard
+
+**And** I am on an item&#39;s \&lt;id\&gt; description page
+
+**And** I add an item in my cart
+
+**When** I click the REMOVE button
+
+**Then** the item amount in my cart decreases by 1
+
+### Examples:
+
+| id |
+| --- |
+| item\_0\_title\_link |
+
+# YourInfo\_BDD
+
+In order to be able to navigate to the checkout overview
+
+As a standard user of the sauce demo website
+
+I want to be able to add my information
+
+So I can advance to the checkout overview
+
+## No Fields Entered
+
+_(Tags: @yourinfopage)_
+
+**Given** I am on the Your Information page
+
+**And** the fields are empty
+
+**When** the continue button is clicked
+
+**Then** the error message will say &quot;Error: First Name is required&quot;
+
+## Not All Fields Entered
+
+_(Tags: @yourinfopage)_
+
+**Given** I am on the Your Information page
+
+**And** the \&lt;first name\&gt;, \&lt;last name\&gt; and \&lt;postal code\&gt; are entered
+
+**When** the continue button is clicked
+
+**Then** the following error message will say \&lt;error message\&gt;
+
+### Examples:
+
+| first name | last name | postal code | error message |
+| --- | --- | --- | --- |
+| Breesha |
+ |
+ | Error: Last Name is required |
+|
+ | Foxton |
+ | Error: First Name is required |
+|
+ |
+ | IM2 | Error: First Name is required |
+| Breesha | Foxton |
+ | Error: Postal Code is required |
+|
+ | Foxton | IM2 | Error: First Name is required |
+| Breesha |
+ | IM2 | Error: Last Name is required |
+
+## Cancel the login
+
+_(Tags: @yourinfopage)_
+
+**Given** I am on the Your Information page
+
+**And** the fields are empty
+
+**When** the cancel button is clicked
+
+**Then** the page url will be &quot;https://www.saucedemo.com/cart.html&quot;
+
+## Valid login
+
+_(Tags: @yourinfopage)_
+
+**Given** I am on the Your Information page
+
+**And** the \&lt;first name\&gt;, \&lt;last name\&gt; and \&lt;postal code\&gt; are entered
+
+**When** the continue button is clicked
+
+**Then** the page url will be &quot;https://www.saucedemo.com/checkout-step-two.html&quot;
+
+### Examples:
+
+| first name | last name | postal code |
+| --- | --- | --- |
+| Breesha | Foxton | IM2 |
+
