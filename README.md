@@ -444,21 +444,12 @@ _(Tags: @yourinfopage)_
 
 | first name | last name | postal code | error message |
 | --- | --- | --- | --- |
-| Breesha |
- |
- | Error: Last Name is required |
-|
- | Foxton |
- | Error: First Name is required |
-|
- |
- | IM2 | Error: First Name is required |
-| Breesha | Foxton |
- | Error: Postal Code is required |
-|
- | Foxton | IM2 | Error: First Name is required |
-| Breesha |
- | IM2 | Error: Last Name is required |
+| Breesha | | | Error: Last Name is required |
+| | Foxton | | Error: First Name is required |
+| | | IM2 | Error: First Name is required |
+| Breesha | Foxton | | Error: Postal Code is required |
+| | Foxton | IM2 | Error: First Name is required |
+| Breesha | | IM2 | Error: Last Name is required |
 
 ## Cancel the login
 
