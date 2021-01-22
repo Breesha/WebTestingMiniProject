@@ -92,13 +92,13 @@ For the final sprint, the aim is to complete all documentation and to prepare fo
 
 ### Class Diagram
 
-![image](https://github.com/Dragonkid1996/WebTestingMiniProject/blob/dev/Project%20Images/ClassDiagram.png)
+![image](https://github.com/Dragonkid1996/WebTestingMiniProject/blob/main/Project%20Images/ClassDiagram.png)
 
 ### Git Branches
 
-![image](https://github.com/Dragonkid1996/WebTestingMiniProject/blob/dev/Project%20Images/Git%20Branches.png)
+![image](https://github.com/Dragonkid1996/WebTestingMiniProject/blob/main/Project%20Images/Git%20Branches.png)
 
 # Testing
 
-![image](https://github.com/Dragonkid1996/WebTestingMiniProject/blob/dev/Project%20Images/TestExplorer.png)
+![image](https://github.com/Dragonkid1996/WebTestingMiniProject/blob/main/Project%20Images/TestExplorer.png)
 
